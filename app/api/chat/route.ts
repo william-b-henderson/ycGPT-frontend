@@ -61,10 +61,8 @@ export async function POST(req: Request) {
     openai.apiKey = previewToken
   }
 
-  console.log(messages.length)
-  console.log("Got here!")
   if (messages.length > 1) {
-    const most_recent_message = messages[-1];
+    const most_recent_message = messages[messages.length - 1];
     const similarQuestions = await searchVectorDb(most_recent_message);
     const systemPrompt = generateSystemPrompt(similarQuestions);
     messages = [...messages, systemPrompt];
