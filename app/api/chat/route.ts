@@ -33,7 +33,7 @@ const searchVectorDb = async (question: string) => {
 }
 
 const generateSystemPrompt = (similarQuestions: ScoredPineconeRecord<RecordMetadata>[]) => {
-  let content = "Based on the user's question, here are some similar results from YCombinator's Youtube Videos. Please reference these directly, including the Youtube Video Name, when answering the user's questions."
+  let content = "Based on the user's question, here are some similar results from YCombinator's Youtube Videos. Reference these directly, including the Youtube Video Name, when answering the user's questions. An example format would be: 'In YCombinator's Video <video_name>, they discuss the topic of ..., the example <example> was brought up in the video.'"
   similarQuestions.forEach((value) => {
     const metadata = value.metadata;
     if (!metadata) return;
