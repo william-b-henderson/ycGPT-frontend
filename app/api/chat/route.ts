@@ -63,7 +63,7 @@ export async function POST(req: Request) {
 
   if (messages.length >= 1) {
     const most_recent_message = messages[messages.length - 1];
-    const similarQuestions = await searchVectorDb(most_recent_message);
+    const similarQuestions = await searchVectorDb(most_recent_message.content);
     const systemPrompt = generateSystemPrompt(similarQuestions);
     messages = [...messages, systemPrompt];
   }
