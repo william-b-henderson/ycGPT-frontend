@@ -75,8 +75,8 @@ dependencies:
     specifier: ^0.2.1
     version: 0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
   openai:
-    specifier: ^4.24.7
-    version: 4.24.7
+    specifier: ^4.29.2
+    version: 4.29.2
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -4109,8 +4109,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /openai@4.24.7:
-    resolution: {integrity: sha512-JUesECWPtsDHO0TlZGb6q73hnAmXUdzj9NrwgZeL4lqlRt/kR1sWrXoy8LocxN/6uOtitywvcJqe0O1PLkG45g==}
+  /openai@4.29.2:
+    resolution: {integrity: sha512-cPkT6zjEcE4qU5OW/SoDDuXEsdOLrXlAORhzmaguj5xZSPlgKvLhi27sFWhLKj07Y6WKNWxcwIbzm512FzTBNQ==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.8

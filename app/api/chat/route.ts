@@ -19,7 +19,7 @@ const index = pc.Index("questions")
 
 const searchVectorDb = async (question: string) => {
   console.log("creating embedding for question", question);
-  const embeddingRes = await openai.embeddings.create({input: question, model: "text-embedding-3-small", dimensions: 768});
+  const embeddingRes = await openai.embeddings.create({input: question, model: "text-embedding-3-small"});
   const embedding = embeddingRes.data[0].embedding;
   console.log("Querrying Pinecone DB");
   const queryResponse = await index.query({
