@@ -4,6 +4,10 @@ Welcome to ycGPT, the innovative chatbot designed to act as your personal startu
 
 
 
+https://github.com/william-b-henderson/ycGPT-frontend/assets/70285124/af2613bc-d91e-438d-887e-4722510084a4
+
+
+
 ## Features
 
 ycGPT offers a wide range of features designed to support budding entrepreneurs, including:
